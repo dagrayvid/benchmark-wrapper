@@ -4,20 +4,20 @@
 #
 #    pip-compile --output-file=requirements/py39-reqs/install.txt setup.cfg
 #
-boto3==1.20.41
+boto3==1.21.9
     # via snafu (setup.cfg)
-botocore==1.23.41
+botocore==1.24.9
     # via
     #   boto3
     #   s3transfer
-cachetools==4.2.4
+cachetools==5.0.0
     # via google-auth
 certifi==2021.10.8
     # via
     #   elasticsearch
     #   kubernetes
     #   requests
-charset-normalizer==2.0.10
+charset-normalizer==2.0.12
     # via requests
 configargparse==1.5.3
     # via snafu (setup.cfg)
@@ -31,7 +31,7 @@ deprecated==1.2.13
     # via redis
 dictdiffer==0.9.0
     # via openshift
-distro==1.6.0
+distro==1.7.0
     # via snafu (setup.cfg)
 docutils==0.16
     # via
@@ -41,11 +41,11 @@ elasticsearch==7.13.4
     # via snafu (setup.cfg)
 flent==2.0.1
     # via snafu (setup.cfg)
-google-auth==2.3.3
+google-auth==2.6.0
     # via kubernetes
 idna==3.3
     # via requests
-importlib-metadata==4.10.1
+importlib-metadata==4.11.2
     # via snafu (setup.cfg)
 jinja2==3.0.3
     # via openshift
@@ -59,15 +59,15 @@ kubernetes==11.0.0
     # via
     #   openshift
     #   snafu (setup.cfg)
-markupsafe==2.0.1
+markupsafe==2.1.0
     # via jinja2
-numpy==1.22.1
+numpy==1.22.2
     # via
     #   pandas
     #   prometheus-api-client
     #   scipy
     #   snafu (setup.cfg)
-oauthlib==3.1.1
+oauthlib==3.2.0
     # via requests-oauthlib
 openshift==0.11
     # via snafu (setup.cfg)
@@ -75,7 +75,7 @@ packaging==21.3
     # via
     #   redis
     #   snafu (setup.cfg)
-pandas==1.4.0
+pandas==1.4.1
     # via prometheus-api-client
 prometheus-api-client==0.5.0
     # via snafu (setup.cfg)
@@ -106,7 +106,7 @@ pyyaml==6.0
     # via
     #   kubernetes
     #   snafu (setup.cfg)
-redis==4.1.1
+redis==4.1.4
     # via snafu (setup.cfg)
 regex==2022.1.18
     # via dateparser
@@ -116,17 +116,17 @@ requests==2.27.1
     #   prometheus-api-client
     #   requests-oauthlib
     #   snafu (setup.cfg)
-requests-oauthlib==1.3.0
+requests-oauthlib==1.3.1
     # via kubernetes
 rsa==4.8
     # via google-auth
-ruamel.yaml==0.17.20
+ruamel-yaml==0.17.21
     # via openshift
-ruamel.yaml.clib==0.2.6
-    # via ruamel.yaml
-s3transfer==0.5.0
+ruamel-yaml-clib==0.2.6
+    # via ruamel-yaml
+s3transfer==0.5.2
     # via boto3
-scipy==1.7.3
+scipy==1.8.0
     # via snafu (setup.cfg)
 six==1.16.0
     # via
@@ -148,7 +148,7 @@ urllib3==1.26.8
     #   elasticsearch
     #   kubernetes
     #   requests
-websocket-client==1.2.3
+websocket-client==1.3.1
     # via kubernetes
 wrapt==1.13.3
     # via deprecated

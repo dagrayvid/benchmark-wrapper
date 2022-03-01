@@ -6,16 +6,16 @@
 #
 attrs==21.4.0
     # via pytest
-boto3==1.20.41
+boto3==1.21.9
     # via
     #   -r requirements/py39-reqs/install.txt
     #   snafu (setup.cfg)
-botocore==1.23.41
+botocore==1.24.9
     # via
     #   -r requirements/py39-reqs/install.txt
     #   boto3
     #   s3transfer
-cachetools==4.2.4
+cachetools==5.0.0
     # via
     #   -r requirements/py39-reqs/install.txt
     #   google-auth
@@ -25,7 +25,7 @@ certifi==2021.10.8
     #   elasticsearch
     #   kubernetes
     #   requests
-charset-normalizer==2.0.10
+charset-normalizer==2.0.12
     # via
     #   -r requirements/py39-reqs/install.txt
     #   requests
@@ -37,7 +37,7 @@ configparser==5.2.0
     # via
     #   -r requirements/py39-reqs/install.txt
     #   snafu (setup.cfg)
-coverage[toml]==6.2
+coverage[toml]==6.3.2
     # via pytest-cov
 dataclasses==0.6
     # via
@@ -57,7 +57,7 @@ dictdiffer==0.9.0
     #   openshift
 distlib==0.3.4
     # via virtualenv
-distro==1.6.0
+distro==1.7.0
     # via
     #   -r requirements/py39-reqs/install.txt
     #   snafu (setup.cfg)
@@ -70,7 +70,7 @@ elasticsearch==7.13.4
     # via
     #   -r requirements/py39-reqs/install.txt
     #   snafu (setup.cfg)
-filelock==3.4.2
+filelock==3.6.0
     # via
     #   tox
     #   virtualenv
@@ -78,7 +78,7 @@ flent==2.0.1
     # via
     #   -r requirements/py39-reqs/install.txt
     #   snafu (setup.cfg)
-google-auth==2.3.3
+google-auth==2.6.0
     # via
     #   -r requirements/py39-reqs/install.txt
     #   kubernetes
@@ -86,7 +86,7 @@ idna==3.3
     # via
     #   -r requirements/py39-reqs/install.txt
     #   requests
-importlib-metadata==4.10.1
+importlib-metadata==4.11.2
     # via
     #   -r requirements/py39-reqs/install.txt
     #   snafu (setup.cfg)
@@ -110,18 +110,18 @@ kubernetes==11.0.0
     #   -r requirements/py39-reqs/install.txt
     #   openshift
     #   snafu (setup.cfg)
-markupsafe==2.0.1
+markupsafe==2.1.0
     # via
     #   -r requirements/py39-reqs/install.txt
     #   jinja2
-numpy==1.22.1
+numpy==1.22.2
     # via
     #   -r requirements/py39-reqs/install.txt
     #   pandas
     #   prometheus-api-client
     #   scipy
     #   snafu (setup.cfg)
-oauthlib==3.1.1
+oauthlib==3.2.0
     # via
     #   -r requirements/py39-reqs/install.txt
     #   requests-oauthlib
@@ -136,11 +136,11 @@ packaging==21.3
     #   redis
     #   snafu (setup.cfg)
     #   tox
-pandas==1.4.0
+pandas==1.4.1
     # via
     #   -r requirements/py39-reqs/install.txt
     #   prometheus-api-client
-platformdirs==2.4.1
+platformdirs==2.5.1
     # via virtualenv
 pluggy==1.0.0
     # via
@@ -167,7 +167,7 @@ pyparsing==3.0.7
     # via
     #   -r requirements/py39-reqs/install.txt
     #   packaging
-pytest==6.2.5
+pytest==7.0.1
     # via
     #   pytest-cov
     #   snafu (setup.cfg)
@@ -199,7 +199,7 @@ pyyaml==6.0
     #   -r requirements/py39-reqs/install.txt
     #   kubernetes
     #   snafu (setup.cfg)
-redis==4.1.1
+redis==4.1.4
     # via
     #   -r requirements/py39-reqs/install.txt
     #   snafu (setup.cfg)
@@ -214,7 +214,7 @@ requests==2.27.1
     #   prometheus-api-client
     #   requests-oauthlib
     #   snafu (setup.cfg)
-requests-oauthlib==1.3.0
+requests-oauthlib==1.3.1
     # via
     #   -r requirements/py39-reqs/install.txt
     #   kubernetes
@@ -222,19 +222,19 @@ rsa==4.8
     # via
     #   -r requirements/py39-reqs/install.txt
     #   google-auth
-ruamel.yaml==0.17.20
+ruamel-yaml==0.17.21
     # via
     #   -r requirements/py39-reqs/install.txt
     #   openshift
-ruamel.yaml.clib==0.2.6
+ruamel-yaml-clib==0.2.6
     # via
     #   -r requirements/py39-reqs/install.txt
-    #   ruamel.yaml
-s3transfer==0.5.0
+    #   ruamel-yaml
+s3transfer==0.5.2
     # via
     #   -r requirements/py39-reqs/install.txt
     #   boto3
-scipy==1.7.3
+scipy==1.8.0
     # via
     #   -r requirements/py39-reqs/install.txt
     #   snafu (setup.cfg)
@@ -252,11 +252,11 @@ statistics==1.0.3.5
     #   -r requirements/py39-reqs/install.txt
     #   snafu (setup.cfg)
 toml==0.10.2
+    # via tox
+tomli==2.0.1
     # via
+    #   coverage
     #   pytest
-    #   tox
-tomli==2.0.0
-    # via coverage
 tox==3.24.5
     # via snafu (setup.cfg)
 ttp==0.8.4
@@ -278,9 +278,9 @@ urllib3==1.26.8
     #   elasticsearch
     #   kubernetes
     #   requests
-virtualenv==20.13.0
+virtualenv==20.13.2
     # via tox
-websocket-client==1.2.3
+websocket-client==1.3.1
     # via
     #   -r requirements/py39-reqs/install.txt
     #   kubernetes
