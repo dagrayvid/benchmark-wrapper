@@ -30,6 +30,7 @@ class Trigger_hammerdb:
         self.async_verbose = args.async_verbose
         self.async_delay = args.async_delay
         self.samples = args.samples
+        self.scaleup_workers = args.scaleup_workers
         # db specific arguments
         # mssql
         self.db_mssql_tcp = args.db_mssql_tcp
@@ -126,6 +127,7 @@ class Trigger_hammerdb:
         runtime,
         rampup,
         samples,
+        scaleup_workers,
         raiseerror,
         keyandthink,
         driver,
@@ -147,7 +149,7 @@ class Trigger_hammerdb:
         processed = []
         i = 0
         # for current_worker in range(0, int(self.db_num_workers)):
-        current_worker = 1
+        current_worker = 1 if self.scaleup_workers == "true" else int(self.db_num_workers)
         while current_worker <= (int(self.db_num_workers)):
             for current_sample in range(0, int(self.samples)):
                 processed.append(
@@ -199,7 +201,7 @@ class Trigger_hammerdb:
         db_info = self._pack_db_info()
         i = 0
         # for current_worker in range(0, int(self.db_num_workers)):
-        current_worker = 1
+        current_worker = 1 if self.scaleup_workers == "true" else int(self.db_num_workers)
         while current_worker <= (int(self.db_num_workers)):
             for current_sample in range(0, int(self.samples)):
                 entry = data[i]
@@ -217,6 +219,7 @@ class Trigger_hammerdb:
                 print("Test driver: {}".format(entry["driver"]))
                 print("Runtime: {}".format(entry["runtime"]))
                 print("Rampup time: {}".format(entry["rampup"]))
+                print("Scaleup workers: {}".format(self.scaleup_workers))
                 print("Worker(s): {}".format(current_worker))
                 print("Total samples: {}".format(entry["samples"]))
                 print("Current sample {}".format(current_sample + 1))
@@ -267,6 +270,7 @@ class Trigger_hammerdb:
             self.runtime,
             self.rampup,
             self.samples,
+            self.scaleup_workers,
             self.raiseerror,
             self.keyandthink,
             self.driver,

@@ -29,6 +29,7 @@ class hammerdb_wrapper:
         self.args.async_verbose = ""
         self.args.async_delay = ""
         self.args.samples = ""
+        self.args.scaleup_workers = ""
         # database specific parameters
         # mssql
         self.args.db_mssql_tcp = ""
@@ -98,6 +99,8 @@ class hammerdb_wrapper:
             self.args.async_delay = os.environ["async_delay"]
         if "samples" in os.environ:
             self.args.samples = os.environ["samples"]
+        if "scaleup_workers" in os.environ:
+            self.args.scaleup_workers = os.environ["scaleup_workers"]
         # exporting db specific settings
         # mssql:
         if "db_mssql_tcp" in os.environ:
